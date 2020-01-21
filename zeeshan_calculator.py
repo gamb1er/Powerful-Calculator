@@ -1,3 +1,6 @@
+
+
+ 
 # Imports the necessary modules
 import math
 import random
@@ -65,8 +68,15 @@ def calculator():
             
         # Exits the user from the calculator
         elif user_input == "quit":
-            print("\nThank you for using this calculator " + Name + "!")
-            break
+        	x=int(input('confrm [1]Yes or [2]No?'))
+        	if x==2:
+        		options()
+        	elif x==1:
+        		print("\nThank you for using this calculator " + Name + "!")
+        		break
+        	else:
+        		print('not able to understand')
+            	
             
         # Allows user to change their saved name
         elif user_input == "name":
@@ -211,4 +221,3 @@ def calculator():
 
 # Runs the calculator
 calculator()
-
